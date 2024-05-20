@@ -1,0 +1,30 @@
+.content{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    align-items: center;
+    gap: 1.5rem;
+    width: 70rem;
+    height: 37.5625rem;
+    padding: 1rem;
+    margin-left: 15%;
+
+}
+
+@media screen and (max-device-width: 655px){
+    .content{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and  (max-device-width: 1160px){
+    .content{
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+
+    
+    }
+}
+

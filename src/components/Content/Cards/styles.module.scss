@@ -1,0 +1,92 @@
+
+
+.cards{
+    background: #fff;
+    width: 13.625rem;
+    height: 17.8125rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background: var(--header-color);
+    
+    .cardContent {
+        padding: 1rem;
+        background: #fff; 
+        height: 90%;
+        
+
+        .foto{
+            background: #000;
+            width: 111px;
+            height: 138px;
+            margin-left: 2.3rem;
+        }
+
+        .productPrice{
+            display: flex;
+            margin-top: .5rem;
+
+            .name{
+                font-size: 16px;
+                line-height: 19px;
+            }
+
+            .price{
+                font-size: 15px;
+                font-weight: bold;
+                line-height: 15px;
+                background: #000;
+                color: #fff;
+                width: 40%;
+                height: 1.5rem;
+                
+                padding: .3rem;
+                margin-left: auto;
+                
+                border-radius: 5px;
+            }
+        }
+
+        .description {
+            font-size: 10px;
+            line-height: 12px;
+            color: #6e6e6e;
+            margin-top: .5rem;
+            
+        }
+
+    }
+    .buy{
+        display: flex;
+        width: 100%;
+        background: none;
+        border: none;
+        
+        margin-top: .5rem;
+        color: #fff;
+        cursor: pointer;
+        transition: opacity 0.6s;
+
+        &:hover{
+            opacity: .7;
+        }
+
+        .bag{
+            margin-left: 3rem;
+            margin-right: 1rem;
+        }
+    }
+}
+
+
+@media screen and  (max-device-width: 1160px){
+    .content{
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+
+        .cards{
+            margin-left: -5rem;
+        }
+    }
+}
+
